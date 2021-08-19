@@ -1,0 +1,19 @@
+package com.liu.java;
+
+public class InstanceTest {
+
+	public static void main(String[] args) {
+		
+		System.out.println(new InstanceTest().getNum(5));
+	}
+	
+	public int getNum(int num) {
+		if(num == 1) {
+			return 1;
+		}
+		else {
+			return num*getNum(num - 1);
+		}
+	}
+
+}
