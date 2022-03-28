@@ -10,3 +10,4 @@ masteradd
 rand test modify
 rand 44
 rand3add
+rand3 push all
