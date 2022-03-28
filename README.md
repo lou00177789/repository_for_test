@@ -7,4 +7,4 @@ rand2pull
 rand2pullnew
 rand2
 masteradd
-rand test
+rand test modify
