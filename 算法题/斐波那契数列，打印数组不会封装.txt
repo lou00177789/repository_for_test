@@ -1,0 +1,21 @@
+package com.liu.java;
+//递归代码java实现输入一个数据N,计算第斐波那契数列n个值,并打印整个数组
+public class InstanceTest {
+
+	public static void main(String[] args) {
+		InstanceTest test = new InstanceTest();
+		int n = 10;
+		for(int i = 0;i<n;i++) {
+			System.out.println(test.f(i));
+		}	
+	}
+		public int f(int n){
+			if(n == 0) {
+				return 1;
+			}else if(n == 1){
+				return 1;
+			}else {
+				return f(n-1)+f(n-2);
+			}		
+		}
+}

@@ -1,0 +1,11 @@
+	public boolean deleteCustomer(int index) {//这个删除的思路很经典，多看看我不大会这种
+		if(index < 0 || index >= total) {//判断该位置上是否存在元素
+			return false;
+		}
+		for (int i = index;i <= total;i++) {//循环使用删除位置上的后一个元素覆盖前一个元素
+			customers[i] = customers[i+1];
+		}
+		customers[total - 1] = null;//记得把最后的那个元素变成默认值
+		total--;
+		return true;
+	}

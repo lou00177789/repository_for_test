@@ -1,0 +1,35 @@
+//创建长度为6的数组，要求数组的值都在0-30之间，且是随机赋值，且各元素要求值不相同
+package com.atguigu.contact;
+
+import java.util.Random;
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		int[] arr = new int[99];
+		Random rad = new Random();
+		for(int i = 0;i<arr.length;i++) {
+			if(i == 0) {
+				arr[i] = rad.nextInt(31);
+			}
+			else {
+				boolean flage = true;
+				lab:while(flage) {
+					int num = rad.nextInt(200);
+					for(int j = 0;j<i;j++) {
+							if(num == arr[j]) {
+								continue lab;
+							}
+						}
+					arr[i] = num;
+					flage = false;
+				}
+			}
+		}
+		
+			
+		for(int i = 0;i<arr.length;i++) {
+			System.out.println(arr[i]);
+		}
+	}
+}

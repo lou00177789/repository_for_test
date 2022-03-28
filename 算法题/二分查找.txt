@@ -1,0 +1,26 @@
+package com.atguigu.contact;
+
+//生成随机数公式(int)(Math.random() * (99-10+1) + 10)
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		int[] arr = new int[] {-34,-21,0,23,33,54,56,67,89,99};
+		int head = 0,tail = arr.length - 1;
+		int dest = 28;
+		boolean isFlag = true;
+		while(head <= tail) {
+			int middle = (head+tail)/2;
+			if(dest == arr[middle]) {
+				System.out.println("找到了！"+dest+"的位置是："+middle);
+				isFlag = false;
+				break;
+			}else if(dest < arr[middle]){
+				tail = middle - 1;
+			}else {
+				head = middle + 1;
+			}
+		}
+		if(isFlag)
+		System.out.println("不好意思没找到！");
+	}
+}

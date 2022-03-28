@@ -1,0 +1,49 @@
+public class String_class {
+    public static void main(String[] args){
+        long start = System.currentTimeMillis();//获取开始时间
+        int sum = 0;
+        for(int i = 2;i <= 100;i++){
+            boolean isFlag = true;
+            for(int j =2;j <= Math.sqrt(i);j++){//Math.sqrt(i)也是一个优化点
+                if(i % j == 0) {
+                    isFlag = false;
+                    break;//这里是一个优化点
+                }
+            }
+            if(isFlag){
+                System.out.println(i);
+                sum++;
+            }
+        }
+        long end = System.currentTimeMillis();//获取结束时间
+        long times= end-start;
+        System.out.println("有"+sum+"个质数");
+        System.out.println(start);
+        System.out.println(end);
+        System.out.println(times);
+    }
+}
+
+
+
+
+public class String_class {
+    public static void main(String[] args){
+        long start = System.currentTimeMillis();//获取开始时间
+        int sum = 0;
+        la:for(int i = 2;i <= 100;i++){
+            for(int j =2;j <= Math.sqrt(i);j++){//Math.sqrt(i)也是一个优化点
+                if(i % j == 0) {
+                    continue la;//这里是一个优化点
+                }
+            }
+            sum++;
+        }
+        long end = System.currentTimeMillis();//获取结束时间
+        long times= end-start;
+        System.out.println("有"+sum+"个质数");
+        System.out.println(start);
+        System.out.println(end);
+        System.out.println(times);
+    }
+}
