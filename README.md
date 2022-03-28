@@ -1,14 +1,2 @@
 # repository_for_test
 这个仓库是用来学习的一个仓库
-test
-test1
-test2
-rand2pull
-rand2pullnew
-rand2
-masteradd
-rand test modify
-rand 44
-rand3add
-rand3 push all
-master aad
