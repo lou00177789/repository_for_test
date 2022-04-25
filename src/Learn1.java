@@ -1,3 +1,4 @@
+import java.lang.reflect.Field;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -19,6 +20,21 @@ public class Learn1 {
         else return n*power(num,n-1);
     }
 
+
+    /**
+     * 反射改一个字符串的值
+     * @throws Exception
+     */
+    public void test() throws Exception{
+        String str = "123";
+        System.out.println(str);
+        Class<? extends String> aClass = str.getClass();
+        Field value = aClass.getDeclaredField("value");
+        value.setAccessible(true);
+        char[] o = (char[]) value.get(str);
+        o[1] = 68;
+        System.out.println(str);
+    }
 
     public static String getNextMarkCode(String preCode) throws Exception {
 

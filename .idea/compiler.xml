@@ -7,10 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="simp" />
+        <module name="demo" />
+        <module name="Spring-Annotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
       <module name="simp" target="1.8" />
+      <module name="Spring-Annotation" target="1.8" />
+      <module name="Spring-Annotion" target="1.8" />
       <module name="TestCros" target="1.8" />
       <module name="TestCros1" target="1.8" />
     </bytecodeTargetLevel>
@@ -19,6 +24,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="TestCros" options="-parameters" />
       <module name="TestCros1" options="-parameters" />
+      <module name="demo" options="-parameters" />
     </option>
   </component>
 </project>
