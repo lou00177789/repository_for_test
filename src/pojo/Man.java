@@ -11,12 +11,41 @@ import java.util.Objects;
  * 2、然后equals
  */
 public class Man extends Object{
+    private void testPrivate(){
+
+    }
+    protected void testProtected(){
+
+    }
+    public void testPublic(){
+
+    }
     int age = 8;
     String name;
+
+    public Man() {
+    }
+
+    public Man(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
 
     public int showMe(String str){
         System.out.println(name + str);
         return age;
+    }
+
+    private void woCao(){
+        System.out.println("this is man' woCao");
+    }
+
+    protected void printAge(){
+        System.out.println("this is man' printAge");
+    }
+
+    private String getName(){
+        return this.name;
     }
 
     @Override

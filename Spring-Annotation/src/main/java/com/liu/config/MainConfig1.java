@@ -18,7 +18,6 @@ public class MainConfig1 {
     @Bean("lisa")
     public Person person(){
         AnnotationAwareAspectJAutoProxyCreator a = new AnnotationAwareAspectJAutoProxyCreator();
-
         return new Person("lisa",20);
     }
 

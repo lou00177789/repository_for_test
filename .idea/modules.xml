@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Spring-Annotation/Spring-Annotation.iml" filepath="$PROJECT_DIR$/Spring-Annotation/Spring-Annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/designPattern/designPattern.iml" filepath="$PROJECT_DIR$/designPattern/designPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kotlinLearn.iml" filepath="$PROJECT_DIR$/kotlinLearn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kotlinLearn!.iml" filepath="$PROJECT_DIR$/kotlinLearn!.iml" />
       <module fileurl="file://$PROJECT_DIR$/simp/simp.iml" filepath="$PROJECT_DIR$/simp/simp.iml" />
       <module fileurl="file://$PROJECT_DIR$/test.iml" filepath="$PROJECT_DIR$/test.iml" />
     </modules>

@@ -6,13 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="designPattern" />
+        <module name="Spring-Annotation" />
         <module name="simp" />
         <module name="demo" />
-        <module name="Spring-Annotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
+      <module name="designPattern" target="1.8" />
       <module name="simp" target="1.8" />
       <module name="Spring-Annotation" target="1.8" />
       <module name="Spring-Annotion" target="1.8" />
